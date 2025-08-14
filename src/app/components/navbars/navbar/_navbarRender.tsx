@@ -7,21 +7,17 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/react";
+
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import React, { useMemo } from "react";
-
-type LinkNavbarType = {
-  name: string;
-  href: string;
-  current: boolean;
-}[];
+import {LinkNavsType} from '@/app/types/NavBarsTypes';
 
 const NavBarLinks = React.memo(
-  function NavBarLinks({ linkNbProps }: { linkNbProps: LinkNavbarType }) {
+  function NavBarLinks({ linkNbProps }: { linkNbProps: LinkNavsType }) {
     console.log(
       ">>>>>> NavBar PADRE renderizado",
       new Date().toLocaleTimeString()

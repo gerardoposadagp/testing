@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import clsx from 'clsx';
-import React from 'react';
+
 import {
   UserGroupIcon,
   HomeIcon,
@@ -9,12 +9,7 @@ import {
   AcademicCapIcon
 } from '@heroicons/react/24/outline';
 import { usePathname } from 'next/navigation';
-
-type LinkSideNav = {
-  name: string;
-  href: string;
-  icon: string;
-}[];
+import {LinkNavsType} from '@/app/types/NavBarsTypes';
 
 const iconMap = {
   UserGroupIcon,
@@ -24,7 +19,7 @@ const iconMap = {
   AcademicCapIcon,
 };
 
-export default function SideNavRender({ linkProps }: { linkProps: LinkSideNav }) {
+export default function SideNavRender({ linkProps }: { linkProps: LinkNavsType }) {
   const pathname = usePathname();
   
   console.log('>>> NavBar HIJO renderizado', new Date().toLocaleTimeString());

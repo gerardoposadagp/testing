@@ -3,12 +3,7 @@
 import NavBarLinks from "@/app/components/navbars/navbar/_navbarRender";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
-
-type LinkNavbarType = {
-  name: string;
-  href: string;
-  current: boolean;
-}[];
+import {LinkNavsType} from "@/app/types/NavBarsTypes";
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -20,7 +15,7 @@ export default function NavBar() {
   }, [pathname]);
 
   // Solo recalcular links cuando cambie la sección principal
-  const links: LinkNavbarType = useMemo(
+  const links: LinkNavsType = useMemo(
     () => [
       {
         name: "Temas 1",
