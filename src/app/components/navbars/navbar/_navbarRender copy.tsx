@@ -17,7 +17,6 @@ import React, { useMemo } from "react";
 import {LinkNavsType} from '@/app/types/NavBarsTypes';
 import { useState } from "react";
 
-const NavBarLinks = React.memo(
   function NavBarLinks({ linkNbProps }: { linkNbProps: LinkNavsType }) {
     console.log(
       ">>>>>> NavBar PADRE renderizado",
@@ -82,15 +81,6 @@ const NavBarLinks = React.memo(
         </div>
       </Disclosure>
     );
-  },
-  (prevProps, nextProps) => {
-    // Comparación personalizada: solo re-renderizar si el estado activo cambia
-    const prevActive = prevProps.linkNbProps.map((item) => item.current);
-    const nextActive = nextProps.linkNbProps.map((item) => item.current);
-
-    // Si los estados activos son iguales, no re-renderizar
-    return JSON.stringify(prevActive) === JSON.stringify(nextActive);
   }
-);
 
 export default NavBarLinks;
