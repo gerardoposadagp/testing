@@ -10,14 +10,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      {/* <div className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-300 p-4 md:h-14">
-        <a href="/">
-          <strong>Testing</strong>
-        </a>
-      </div> */}
-      <Navbar />
-      <main> {children} </main>
-      {/* <Footer /> */}
+        {/* className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-300 p-4 md:h-14" */}
+        <div className="relative bg-gray-800 text-white p-2">
+            Testing
+        </div>
+        <Navbar />
+        <main> {children} </main>
+        <Footer />
       </body>
     </html>
   );

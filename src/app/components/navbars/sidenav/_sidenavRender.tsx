@@ -26,6 +26,7 @@ const iconMap = {
 
 export default function SideNavRender({ linkProps }: { linkProps: LinkSideNav }) {
   const pathname = usePathname();
+  
   console.log('>>> NavBar HIJO renderizado', new Date().toLocaleTimeString());
 
   return (

@@ -50,7 +50,6 @@ export default function SideNavTema1(props: { tema: string }) {
           }
         ];
       break;
-
     case 'tema3':
       links = [
           {
