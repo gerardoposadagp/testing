@@ -1,3 +1,16 @@
+npx create-next-app@latest testing --typescript --eslint --tailwind --src-dir --app --import-alias "@/\*" && cd testing && npm install @supabase/supabase-js && npx shadcn@latest init
+
+queda listo para correr npm run dev
+
+pnpm add clsx
+clsx es una librería de JavaScript que te ayuda a combinar clases CSS de forma limpia y condicional sin tener que estar concatenando strings manualmente.
+
+npm install @heroicons/react
+para los iconos del sidebar
+
+npm install @headlessui/react -> librería de componentes accesibles hecha por el equipo de TailwindCSS
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
