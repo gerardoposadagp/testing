@@ -12,7 +12,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import React, { useMemo } from "react";
+import React from "react";
 
 type LinkNavbarType = {
   name: string;
@@ -21,7 +21,7 @@ type LinkNavbarType = {
 }[];
 
 const NavBarLinks = React.memo(
-  function NavBarLinks({ linkNbProps }: { linkNbProps: LinkNavbarType }) {
+  function NavBarLinks({ linkProps }: { linkProps: LinkNavbarType }) {
     console.log(
       ">>>>>> NavBar PADRE renderizado",
       new Date().toLocaleTimeString()
@@ -56,7 +56,7 @@ const NavBarLinks = React.memo(
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
-                  {linkNbProps.map((item) => {
+                  {linkProps.map((item) => {
                     // Usar solo la prop current del item para el estado activo
                     const isActive = item.current;
                     return (
@@ -86,8 +86,8 @@ const NavBarLinks = React.memo(
   },
   (prevProps, nextProps) => {
     // Comparación personalizada: solo re-renderizar si el estado activo cambia
-    const prevActive = prevProps.linkNbProps.map((item) => item.current);
-    const nextActive = nextProps.linkNbProps.map((item) => item.current);
+    const prevActive = prevProps.linkProps.map((item) => item.current);
+    const nextActive = nextProps.linkProps.map((item) => item.current);
 
     // Si los estados activos son iguales, no re-renderizar
     return JSON.stringify(prevActive) === JSON.stringify(nextActive);

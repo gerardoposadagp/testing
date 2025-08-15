@@ -46,5 +46,5 @@ export default function NavBar() {
     [mainSection]
   ); // Depende de mainSection, no de pathname completo
 
-  return <NavBarLinks linkNbProps={links} />;
+  return <NavBarLinks linkProps={links} />;
 }
