@@ -1,7 +1,15 @@
-export default function Test3Tema1() {
+import SidebarsLayout from "../../components/layouts/SidebarsLayout";
+import PageLayout from "@/app/components/layouts/PageLayout";
+
+const Page = () => {
+  console.log("**** Dashboard Tema1 Test 3 rendered");
   return (
-    <>
-        <p>Tema 1 - Test 3 </p>
-    </>
+    <SidebarsLayout sidebarName="tema1">
+      <PageLayout>
+        <h1>Tema 1 Test 3</h1>
+      </PageLayout>
+    </SidebarsLayout>
   );
-}
+};
+
+export default Page;

@@ -1,5 +1,5 @@
 type LinkNavbarType = {
-  name: string;
+  label: string;
   href: string;
   current?: boolean;
   icon?: string;
