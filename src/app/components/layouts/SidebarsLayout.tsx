@@ -1,4 +1,4 @@
-import SidebarList from "@/app/components/navbars/sideBars/SidebarList";
+import SidebarRender from "@/app/components/navbars/sideBars/SidebarRender";
 import SidebarLinksData from "@/app/components/navbars/sideBars/SidebarJSONLinks";
 
 type LayoutProps = {
@@ -10,8 +10,8 @@ const SidebarsLayout: React.FC<LayoutProps> = ({ sidebarName, children }) => {
   const list = SidebarLinksData(sidebarName) ?? [];
   return (
     <div style={{ display: "flex" }}>
-      <div style={{ display: "flex", width: "210px", padding: "20px", background: "#e1e8f1ff" }}>
-        <SidebarList list={list} />
+      <div className="flex h-48 items-stretch" style={{ display: "flex", height: "880px", width: "210px", padding: "20px", background: "#798697ff" }}>
+        <SidebarRender linkProps={list} />
       </div>
       <div className="box-border border-1" style={{ width: "900px" }}>
         {children}

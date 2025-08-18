@@ -1,8 +1,7 @@
 type LinkNavbarType = {
   label: string;
   href: string;
-  current?: boolean;
-  icon?: string;
+  descripcion?: string;
 }[];
 
 export type { LinkNavbarType };

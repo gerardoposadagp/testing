@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <SidebarsLayout sidebarName="tema1">
       <PageLayout>
-        <h1>Tema1 Test1</h1>
+        <div className="text-base">Descripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 Content</div>
       </PageLayout>
     </SidebarsLayout>
   );

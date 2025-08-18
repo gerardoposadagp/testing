@@ -7,19 +7,31 @@ export default function NavBar() {
 
   const links: LinkNavbarType = [
       {
-        label: "Temas 1",
+        label: "React",
         href: "/tema1",
       },
       {
-        label: "Temas 2",
+        label: "Next.js",
         href: "/tema2",
       },
       {
-        label: "Temas 3",
+        label: "Tailwind",
         href: "/tema3",
       },
       {
-        label: "Temas 4",
+        label: "Tanstack",
+        href: "/",
+      },
+      {
+        label: "TypeScript",
+        href: "/",
+      },
+      {
+        label: "NodeJS",
+        href: "/",
+      },
+      {
+        label: "ShadCN",
         href: "/",
       }
     ]
