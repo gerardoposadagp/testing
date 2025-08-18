@@ -10,7 +10,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-300 p-4 md:h-14" */}
         <div className="relative bg-gray-800 text-white p-2">
             Testing
         </div>

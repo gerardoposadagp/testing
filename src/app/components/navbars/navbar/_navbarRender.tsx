@@ -14,18 +14,11 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import React from "react";
 
-type LinkNavbarType = {
-  name: string;
-  href: string;
-  current: boolean;
-}[];
+import type { LinkNavbarType } from "@/app/types/NavBarsTypes";
 
 const NavBarLinks = React.memo(
   function NavBarLinks({ linkProps }: { linkProps: LinkNavbarType }) {
-    console.log(
-      ">>>>>> NavBar PADRE renderizado",
-      new Date().toLocaleTimeString()
-    );
+    console.log(">>>>>> NAVBAR renderizado");
 
     return (
       <Disclosure as="nav" className="relative bg-gray-800">
