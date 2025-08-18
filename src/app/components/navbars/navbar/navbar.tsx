@@ -3,7 +3,7 @@
 import NavBarRender from "@/app/components/navbars/navbar/_navbarRender";
 import type { LinkNavbarType } from "@/app/types/NavBarsTypes";
 
-export default function NavBar() {
+export default function Navbar() {
 
   const links: LinkNavbarType = [
       {
