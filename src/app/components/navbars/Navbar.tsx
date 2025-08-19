@@ -1,5 +1,3 @@
-"use client";
-
 import NavBarRender from "@/app/components/navbars/_navbarRender";
 import type { LinkNavbarType } from "@/app/types/NavBarsTypes";
 
