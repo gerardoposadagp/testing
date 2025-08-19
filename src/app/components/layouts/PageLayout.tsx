@@ -1,41 +1,19 @@
-"use client";
-
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
-
-interface DashboardLayoutProps {
+interface Props {
   children: React.ReactNode;
 }
 
-export function Search() {
-  const searchParams = useSearchParams();
-  const descripcion = searchParams.get("descripcion");
-  const titulo = searchParams.get("titulo");
-
+export default function PageLayout({ children }: Props) {
   return (
     <>
-      <div className="text-xl">{titulo}</div>
-      <div className="text-base">{descripcion}</div>
-    </>
-  );
-}
-
-export default function PageLayout({ children }: DashboardLayoutProps) {
-  return (
-    <>
-      <div
-        className="box-border border-1 p-4 ..."
-        style={{ width: "900px", height: "80px" }}
-      >
-        <Suspense fallback={<div>Loading...</div>}>
-          <Search />
-        </Suspense>
-      </div>
       <div
         className="box-border border-1 p-4 ..."
         style={{ width: "900px", height: "800px" }}
       >
-        {children}
+        <div style={{ display: "flex", padding: "5px 5px 5px 5px" }}>
+          <div>
+            <main>{children}</main>
+          </div>
+        </div>
       </div>
     </>
   );
