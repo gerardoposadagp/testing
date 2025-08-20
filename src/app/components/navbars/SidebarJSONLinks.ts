@@ -16,8 +16,9 @@ export default function SidebarLinkData(sidebarName: string) {
   {
     "menu": "nextjs",
     "items": [
-      { "href": "/nextjs/test1", "label": "nextjs Test1Tema1 Test1" },
-      { "href": "/nextjs/test2", "label": "nextjs Test2" }
+      { "href": "/nextjs/test1", "label": "useState - Contador boton" },
+      { "href": "/nextjs/test2", "label": "1 fetch vs useState" },
+      { "href": "/nextjs/test3", "label": "2 fetch vs use 2" }
     ]
   },
   {
@@ -37,7 +38,7 @@ export default function SidebarLinkData(sidebarName: string) {
   { 
     "menu": "tailwind",
     "items": [
-      { "href": "/tailwind/test1", "label": "tailwind Test1" },
+      { "href": "/tailwind/test1", "label": "Ejemplos uso Tailwinds" },
       { "href": "/tailwind/test2", "label": "tailwind Test2" }
     ]
   },

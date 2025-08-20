@@ -1,6 +1,8 @@
 const Page = () => {
-  console.log("**** Tema1 Test 2 rendered");
-  return <h1>Tema1 Test2</h1>;
+  console.log("**** Tema2 Test 2 rendered");
+  return (
+        <div className="text-base">Descripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 ContenDescripcion Tema1 Test 1 Content</div>
+  );
 };
 
 export default Page;

@@ -1,3 +1,11 @@
+const Code = () => {
+  // export default function Code() {
+  return (
+    <div className="pt-10 text-xs">
+      <hr />
+      <pre>
+        {`
+
 "use client";
 
 import { useState } from "react";
@@ -28,3 +36,11 @@ const Page = () => {
 };
 
 export default Page;
+
+    `}
+      </pre>
+    </div>
+  );
+};
+
+export default Code;
