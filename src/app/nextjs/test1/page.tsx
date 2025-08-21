@@ -4,7 +4,7 @@ import { useState } from "react";
 import Code from "./code";
 
 const Page = () => {
-  console.log("**** Tema1 Test 1 rendered");
+  // console.log("**** Tema1 Test 1 rendered");
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);

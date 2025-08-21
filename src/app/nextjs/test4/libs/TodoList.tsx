@@ -1,23 +1,16 @@
 "use client";
 
 import { use } from "react";
+import { useTodosContext } from "../libs/todos-content-provider";
 
-interface Todo {
-  id: number;
-  title: string;
-  completed: boolean;
-}
-
-export default function TodoList({
-  todosPromise,
-}: {
-  todosPromise: Promise<Todo[]>;
-}) {
+export default function TodoList() {
+  const { todosPromise } = useTodosContext();
   const todos = use(todosPromise);
+  todos.sort((a, b) => a.title.localeCompare(b.title));
 
   return (
     <ul>
-      {todos.map((todo: Todo) => (
+        {todos.map((todo: { id: number; title: string; completed: boolean }, i: number) => (
         <li
           onClick={() => {
             console.log("Todo clicked:", todo.title);
@@ -27,7 +20,7 @@ export default function TodoList({
             todo.completed ? "line-through" : ""
           }`}
         >
-          {todo.title}
+          {i + 1} / {todo.id} - {todo.title}
         </li>
       ))}
     </ul>

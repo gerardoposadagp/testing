@@ -1,4 +1,4 @@
-import TodoList from "@/app/nextjs/test4/lista-tareas/ListaTareas";
+import TodoList from "@/app/nextjs/test4/libs/TodoList";
 import { Suspense } from "react";
 
 export default function Home() {
@@ -16,6 +16,12 @@ el estado global de la aplicación, permitiendo que los datos se compartan entre
 los componentes sin necesidad de volver a fetcharlos.
 Se pasa la promesa (todosPromise) al context provider.
 Spread arround to any component that will need it
+
+requiere -> export const dynamic = "force-dynamic"; en getData.tsx o de lo
+contrario al hacer build lo convierte en estatico
+
+en este caso en build con que se cargue una vez la data,
+ya no vuelve a hacer el fetch por el context provider
 
 `}
       </pre>

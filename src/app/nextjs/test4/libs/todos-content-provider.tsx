@@ -2,8 +2,14 @@
 
 import React, { createContext, useContext } from "react";
 
+interface Todo {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
 interface TodosContextType {
-  todosPromise: Promise<any[]>;
+  todosPromise: Promise<Todo[]>;
 }
 
 // Create context with default values
@@ -14,7 +20,7 @@ export function TodosContextProvider({
   todosPromise,
 }: {
   children: React.ReactNode;
-  todosPromise: Promise<any[]>;
+  todosPromise: Promise<Todo[]>;
 }) {
   return (
     <TodosContext.Provider value={{ todosPromise: todosPromise }}>

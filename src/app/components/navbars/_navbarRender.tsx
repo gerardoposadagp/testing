@@ -1,17 +1,15 @@
 "use client";
 
-import { Disclosure, DisclosureButton } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-
 import Link from "next/link";
 import clsx from "clsx";
 import React from "react";
 import { useState } from "react";
+import Image from "next/image";
 
 import type { LinkNavbarType } from "@/app/types/NavBarsTypes";
 
 function NavBarLinks({ linkProps }: { linkProps: LinkNavbarType }) {
-  console.log(">>>>>> NAVBAR renderizado");
+  // console.log(">>>>>> NAVBAR renderizado");
 
   const [index, setIndex] = useState(-1);
 
@@ -20,14 +18,16 @@ function NavBarLinks({ linkProps }: { linkProps: LinkNavbarType }) {
   };
 
   return (
-    <Disclosure as="nav" className="relative bg-gray-800">
+    <div className="relative bg-gray-800">
       <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
+              <Image
+                width={32}
+                height={32}
                 alt="Your Company"
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
                 className="h-8 w-auto"
@@ -60,7 +60,7 @@ function NavBarLinks({ linkProps }: { linkProps: LinkNavbarType }) {
           </div>
         </div>
       </div>
-    </Disclosure>
+    </div>
   );
 }
 

@@ -29,7 +29,7 @@ export default function SidebarRender({
   const pathname = usePathname();
   const LinkIcon = iconMap["DocumentDuplicateIcon"];
 
-  console.log(">>> Sidebar renderizado");
+  // console.log(">>> Sidebar renderizado");
 
   return (
     <nav>

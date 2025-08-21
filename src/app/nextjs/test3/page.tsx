@@ -15,6 +15,12 @@ export default function Home() {
         {`
 Esta es la forma correcta de combinar el fetch asincrono pero no con useState sino con use 
 para poder tener acceso a los eventos del lado del cliente, como un onClick event.
+
+requiere -> export const dynamic = "force-dynamic"; en getData.tsx o de lo
+contrario al hacer build lo convierte en estatico
+
+en todo caso en build cada vez que se vuelve a esta pagina se vuelve a hacer el fetch
+
 `}
       </pre>
       <br />
