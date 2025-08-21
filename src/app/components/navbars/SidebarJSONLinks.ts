@@ -17,8 +17,9 @@ export default function SidebarLinkData(sidebarName: string) {
     "menu": "nextjs",
     "items": [
       { "href": "/nextjs/test1", "label": "useState - Contador boton" },
-      { "href": "/nextjs/test2", "label": "1 fetch vs useState" },
-      { "href": "/nextjs/test3", "label": "2 fetch vs use 2" }
+      { "href": "/nextjs/test2", "label": "1.1 - fetch vs useState" },
+      { "href": "/nextjs/test3", "label": "1.2 - fetch vs use" },
+      { "href": "/nextjs/test4", "label": "1.3 - fetch/use con context provider" }
     ]
   },
   {

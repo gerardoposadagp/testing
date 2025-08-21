@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Code from "./code";
-import { Link } from "lucide-react";
-import { Button } from "@headlessui/react";
 
 const Page = () => {
   console.log("**** Tema1 Test 1 rendered");

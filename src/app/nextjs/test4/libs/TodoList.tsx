@@ -1,12 +1,10 @@
 "use client";
 
 import { use } from "react";
+import { useTodosContext } from "./todos-content-provider";
 
-export default function TodoList({
-  todosPromise,
-}: {
-  todosPromise: Promise<any>;
-}) {
+export default function TodoList() {
+  const { todosPromise } = useTodosContext();
   const todos = use(todosPromise);
 
   return (
