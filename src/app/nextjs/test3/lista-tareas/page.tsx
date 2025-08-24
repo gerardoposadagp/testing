@@ -1,4 +1,4 @@
-import ListaTareas from "@/app/nextjs/test4/lista-tareas/ListaTareas";
+import ListaTareas from "@/app/nextjs/test3/lista-tareas/ListaTareas";
 import { Suspense } from "react";
 
 export default function Home() {

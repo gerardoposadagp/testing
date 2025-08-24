@@ -1,10 +1,7 @@
 import TodoList from "@/app/nextjs/test3/libs/TodoList";
-import GetData from "./libs/GetData";
 import { Suspense } from "react";
 
 export default function Home() {
-  const todosPromise = GetData();
-
   return (
     <>
       <div className="text-xl pb-5">
@@ -13,13 +10,18 @@ export default function Home() {
       <hr className="pb-5" />
       <pre className="text-sm">
         {`
-Esta es la forma correcta de combinar el fetch asincrono pero no con useState sino con use 
-para poder tener acceso a los eventos del lado del cliente, como un onClick event.
+
+Combinar el fetch asincrono desde el layout con un context provider para manejar
+el estado global de la aplicación, permitiendo que los datos se compartan entre
+los componentes sin necesidad de volver a fetcharlos.
+Se pasa la promesa (todosPromise) al context provider.
+Spread arround to any component that will need it
 
 requiere -> export const dynamic = "force-dynamic"; en getData.tsx o de lo
 contrario al hacer build lo convierte en estatico
 
-en todo caso en build cada vez que se vuelve a esta pagina se vuelve a hacer el fetch
+en este caso en build con que se cargue una vez la data,
+ya no vuelve a hacer el fetch por el context provider
 
 `}
       </pre>
@@ -30,7 +32,7 @@ en todo caso en build cada vez que se vuelve a esta pagina se vuelve a hacer el 
 
       <h1 className="text-center text-3xl font-bold mt-12">Todo App</h1>
       <Suspense fallback={<div>Cargando... 3 segs de delay en código...</div>}>
-        <TodoList todosPromise={todosPromise} />
+        <TodoList />
       </Suspense>
     </>
   );

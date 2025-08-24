@@ -1,9 +1,9 @@
 import TodoList from "@/app/nextjs/test2/libs/TodoList";
-// import GetData from "./libs/GetData";
+import GetData from "./libs/GetData";
 import { Suspense } from "react";
 
 export default function Home() {
-  // const todosPromise = GetData();
+  const todosPromise = GetData();
 
   return (
     <>
@@ -11,20 +11,15 @@ export default function Home() {
         fetch asincrono (SSR) vs use (CSR) - funciona parcialmente
       </div>
       <hr className="pb-5" />
-      <pre className="text-sm text-gray-600">
-        {`En este ejemplo se hace un fetch a través del componente GetData, de manera asincrona,
-delviendo un JSON, el cual es renderizado por el componente TodoList
-(componente es SSR), que está inserto en esta pagina, envuelto en un Suspense
-para que muestre un estado de carga mientras se obtienen los datos.
+      <pre className="text-sm">
+        {`
+Esta es la forma correcta de combinar el fetch asincrono pero no con useState sino con use 
+para poder tener acceso a los eventos del lado del cliente, como un onClick event.
 
-El problema viene cuando se tratar de colocar un onClick en el li no funciona
-como se espera. La razon es que:
+requiere -> export const dynamic = "force-dynamic"; en getData.tsx o de lo
+contrario al hacer build lo convierte en estatico
 
-Regla general en Next.js:
-  En Server Components (por defecto):
-    No puedes usar useState, useEffect, useLayoutEffect, useRef, useReducer.
-  En Client Components (pones "use client" arriba):
-    Puedes usar todos los hooks de React sin problema.
+en todo caso en build cada vez que se vuelve a esta pagina se vuelve a hacer el fetch
 
 `}
       </pre>
@@ -34,9 +29,8 @@ Regla general en Next.js:
       </a>
 
       <h1 className="text-center text-3xl font-bold mt-12">Todo App</h1>
-      <Suspense fallback={<div>Cargando...</div>}>
-        {/* <TodoList todosPromise={todosPromise} /> */}
-        <TodoList />
+      <Suspense fallback={<div>Cargando... 3 segs de delay en código...</div>}>
+        <TodoList todosPromise={todosPromise} />
       </Suspense>
     </>
   );

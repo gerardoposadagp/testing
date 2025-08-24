@@ -16,31 +16,31 @@ export default function SidebarLinkData(sidebarName: string) {
   {
     "menu": "nextjs",
     "items": [
-      { "href": "/nextjs/test1", "label": "useState - Contador boton" },
-      { "href": "/nextjs/test2", "label": "1.1 - fetch vs useState" },
-      { "href": "/nextjs/test3", "label": "1.2 - fetch vs use" },
-      { "href": "/nextjs/test4", "label": "1.3 - fetch/use con context provider" }
+      { "href": "/nextjs/test1", "label": "1.1 - fetch vs useState", "icon": "HomeIcon" },
+      { "href": "/nextjs/test2", "label": "1.2 - fetch vs use", "icon": "DocumentDuplicateIcon" },
+      { "href": "/nextjs/test3", "label": "1.3 - fetch/use con context provider", "icon": "DocumentTextIcon" }
     ]
   },
   {
     "menu": "react",
     "items": [
-      { "href": "/react/test1", "label": "react Test1" },
-      { "href": "/react/test2", "label": "react Test2" }
+      { "href": "/react/test1", "label": "useState - Contador boton", "icon": "UserGroupIcon" },
+      { "href": "/react/test2", "label": "useEffect - Reloj", "icon": "AcademicCapIcon" },
+      { "href": "/react/test3", "label": "'function xyz() {}' VS 'const xyz = () => {}'", "icon": "HomeIcon" }
     ]
   },
   { 
     "menu": "typescript",
     "items": [
-      { "href": "/typescript/test1", "label": "typescript Test1" },
-      { "href": "/typescript/test2", "label": "typescript Test2" }
+      { "href": "/typescript/test1", "label": "typescript Test1", "icon": "DocumentTextIcon" },
+      { "href": "/typescript/test2", "label": "typescript Test2", "icon": "HomeIcon" }
     ]
   },
   { 
     "menu": "tailwind",
     "items": [
-      { "href": "/tailwind/test1", "label": "Ejemplos uso Tailwinds" },
-      { "href": "/tailwind/test2", "label": "tailwind Test2" }
+      { "href": "/tailwind/test1", "label": "Ejemplos uso Tailwinds", "icon": "HomeIcon" },
+      { "href": "/tailwind/test2", "label": "tailwind Test2", "icon": "AcademicCapIcon" }
     ]
   },
   { 

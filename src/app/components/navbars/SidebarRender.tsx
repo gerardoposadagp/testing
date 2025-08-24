@@ -32,10 +32,9 @@ export default function SidebarRender({
     <nav>
       <ul>
         {linkProps.map((link, i) => {
-          // const Icon = DocumentTextIcon;
-          // const Icon = link.icon
-          //   ? iconMap[link.icon as keyof typeof iconMap]
-          //   : DocumentDuplicateIcon;
+          const Icon = link.icon
+            ? iconMap[link.icon as keyof typeof iconMap]
+            : DocumentDuplicateIcon;
 
           return (
             <li key={i}>
@@ -50,7 +49,7 @@ export default function SidebarRender({
                   }
                 )}
               >
-                <DocumentDuplicateIcon className="w-6 h-6 flex-shrink-0 min-w-[24px] min-h-[24px]" />
+                <Icon className="w-6 h-6 flex-shrink-0 min-w-[24px] min-h-[24px]" />
                 <p className="hidden md:block">{link.label}</p>
               </Link>
             </li>
